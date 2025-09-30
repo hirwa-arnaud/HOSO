@@ -3,12 +3,13 @@ import ghImg from '../assets/gh.jpg';
 import Jo from '../assets/jo.jpg';
 import Ho from '../assets/hos.jpg';
 import Nvs from '../assets/nvs.webp'
+import Header from "../components/Header";
 export default function Landin() {
   const items = [
     {
       title: "Mission",
       text: "To improve the quality and standards of education through competitive school leadership and management",
-      icon: <FileText size={28} />,
+      icon: <FileText className="" size={28} />,
       color: "bg-blue-500",
     },
     {
@@ -26,6 +27,7 @@ export default function Landin() {
   ];
 return(
     <>
+    <Header />
     <section className="py-16 bg-white text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
         Mission, Goals, <span className="text-teal-500">Values.</span>
@@ -39,10 +41,10 @@ return(
         {items.map((item, idx) => (
           <div
             key={idx}
-            className="bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-xl transition"
+            className="bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-xl transition relative"
           >
             <div
-              className={`w-14 h-14 mx-auto flex items-center justify-center rounded-full text-white ${item.color}`}
+              className={`w-14 h-14 mx-auto flex items-center justify-center rounded-full text-white ${item.color} absolute  top-[-13px]`}
             >
               {item.icon}
             </div>

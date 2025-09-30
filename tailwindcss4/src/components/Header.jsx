@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router"
 import { Menu, X } from "lucide-react"; 
 import Hero from "./Hero"
 export default function Header() {
@@ -11,11 +12,11 @@ export default function Header() {
 <img src="logo.png" className="h-30" />
 
         <ul className="hidden md:flex space-x-8 text-white font-medium">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About Us</a></li>
+         <Link to="/">Home</Link>
+         <Link to="/news">News</Link>
+         <Link to="/contact">Contact</Link>
+         <Link to="/blog">Blog</Link>
+         <Link to="/about">About Us</Link>
         </ul>
 
         <div className="hidden md:flex space-x-4">
@@ -37,11 +38,11 @@ export default function Header() {
 
       {isOpen && (
         <div className="md:hidden bg-teal-600 px-6 py-4 space-y-4 text-white">
-          <a href="#" className="block">Home</a>
-          <a href="#" className="block">News</a>
-          <a href="#" className="block">Contact</a>
-          <a href="#" className="block">Blog</a>
-          <a href="#" className="block">About Us</a>
+          <Link to="/" className="block">Home</Link>
+          <Link to="/news" className="block">News</Link>
+          <Link to="/contact" className="block">Contact</Link>
+          <Link to="/blog" className="block">Blog</Link>
+          <Link to="/about" className="block">About Us</Link>
           <div className="flex space-x-4 mt-4">
             <button className="w-1/2 px-4 py-2 rounded-full bg-white text-gray-800 font-semibold hover:bg-gray-200">
               Login
