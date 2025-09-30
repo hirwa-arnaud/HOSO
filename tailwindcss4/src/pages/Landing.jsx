@@ -145,7 +145,6 @@ return(
     </section>
        <section className="bg-white py-16 px-6 lg:px-20">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left Side */}
         <div>
           <p className="uppercase text-sm tracking-wide text-blue-600 mb-2">
             Testimonial
@@ -164,10 +163,7 @@ return(
             <span className="ml-2">→</span>
           </button>
         </div>
-
-        {/* Right Side */}
         <div className="relative flex justify-center">
-          {/* Image */}
           <img
             src={Jo}
             alt="Speaker"
