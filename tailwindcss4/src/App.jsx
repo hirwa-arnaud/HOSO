@@ -1,10 +1,12 @@
-import Header from "./components/Header";
-import Landin from "./pages/Landin"
+import { Routes,Route } from "react-router"
+import Landing from "./pages/Landing";
+
 export default function App() {
   return (
     <div>
-      <Header />
-      <Landin />
+   <Routes>
+    <Route path="/" element={<Landing />} />
+   </Routes>
     </div>
   );
 }
