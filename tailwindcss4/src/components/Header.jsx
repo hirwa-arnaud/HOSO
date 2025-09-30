@@ -5,7 +5,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-teal-500 ">
+    <header className="bg-teal-500" style={{
+ clipPath: "ellipse(100% 100% at 50% 0%)"    }}>
       <nav className="container mx-auto flex items-center justify-between px-6 py-0">
 <img src="logo.png" />
 
@@ -70,7 +71,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="flex-1 flex justify-center md:justify-end mb-8 md:mb-0">
+        <div className="flex-1 flex justify-center md:justify-end mb-8 md:mb-0 pb-10">
           <img src="chancen.jpg" alt="Students"  className="h-80 rounded-2xl"
           />
         </div>
