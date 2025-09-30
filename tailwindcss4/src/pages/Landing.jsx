@@ -3,6 +3,7 @@ import ghImg from '../assets/gh.jpg';
 import Jo from '../assets/jo.jpg';
 import Ho from '../assets/hos.jpg';
 import Nvs from '../assets/nvs.webp'
+import Header from '../components/Header'
 export default function Landin() {
   const items = [
     {
@@ -26,6 +27,7 @@ export default function Landin() {
   ];
 return(
     <>
+    <Header />
     <section className="py-16 bg-white text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
         Mission, Goals, <span className="text-teal-500">Values.</span>
