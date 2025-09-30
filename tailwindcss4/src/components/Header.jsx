@@ -17,7 +17,6 @@ export default function Header() {
           <li><a href="#">About Us</a></li>
         </ul>
 
-        {/* Buttons */}
         <div className="hidden md:flex space-x-4">
           <button className="px-4 py-2 rounded-full bg-white text-gray-800 font-semibold hover:bg-gray-200">
             Login
