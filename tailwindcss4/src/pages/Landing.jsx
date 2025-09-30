@@ -3,7 +3,7 @@ import ghImg from '../assets/gh.jpg';
 import Jo from '../assets/jo.jpg';
 import Ho from '../assets/hos.jpg';
 import Nvs from '../assets/nvs.webp'
-import Header from "../components/Header";
+import Header from '../components/Header'
 export default function Landin() {
   const items = [
     {
@@ -139,6 +139,60 @@ return(
             <button className="bg-white text-cyan-500 w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition">
               <PlayCircle size={40} strokeWidth={1.5} />
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+       <section className="bg-white py-16 px-6 lg:px-20">
+      <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p className="uppercase text-sm tracking-wide text-blue-600 mb-2">
+            Testimonial
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            What They Say?
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-8">
+            Being part of the Head of Schools Organization (HOSO) has been one
+            of the most rewarding experiences of my career. As a head teacher, I
+            often faced challenges in managing my school effectively, from staff
+            development to student engagement and community involvement.
+          </p>
+          <button className="inline-flex items-center border border-cyan-400 text-cyan-400 px-6 py-3 rounded-full hover:bg-cyan-400 hover:text-white transition duration-300">
+            Write your testimonial
+            <span className="ml-2">→</span>
+          </button>
+        </div>
+        <div className="relative flex justify-center">
+          <img
+            src={Jo}
+            alt="Speaker"
+            className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+          />
+
+          <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-white rounded-2xl shadow-xl p-6 w-11/12 md:w-4/5">
+            <p className="text-gray-700 my-3">
+              “Joining HOSO has completely changed the way I lead my school. The
+              training and support I’ve received have empowered me to implement
+              new strategies and inspire my teachers and students.”
+            </p>
+            <h4 className="font-semibold text-gray-900">Nsengimana Joseph</h4>
+            <div className="flex items-center justify-between mt-3">
+              {/* Stars */}
+              <div className="flex space-x-1 text-yellow-400">
+                {[...Array(5)].map((_, i) => (
+                  <svg
+                    key={i}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-sm text-gray-500">12 reviews at Yelp</p>
+            </div>
           </div>
         </div>
       </div>
