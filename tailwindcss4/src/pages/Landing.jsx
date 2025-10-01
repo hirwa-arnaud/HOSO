@@ -224,32 +224,26 @@ export default function Landin() {
       </section>
       
     <section className="py-16 px-6 md:px-20 bg-white">
+  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center">
+    Photo <span className="text-cyan-500">Gallery</span>
+  </h2>
 
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center">
-        Photo <span className="text-cyan-500">Gallery</span>
-      </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {images.map((src, idx) => (
-          <div
-            key={idx}
-            className="bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-xl transition relative"
-          >
-            <div
-              className={`w-14 h-14 mx-auto flex items-center justify-center rounded-full text-white ${item.color} absolute  top-[-13px]`}
-            >
-              {item.icon}
-            </div>
-
-            <h3 className="mt-6 text-xl font-semibold text-gray-900">
-              {item.title}
-            </h3>
-
-            <p className="mt-4 text-gray-600">{item.text}</p>
-          </div>
-        ))}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {images.map((src, idx) => (
+      <div
+        key={idx}
+        className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+      >
+        <img
+          src={src}
+          alt={`Gallery ${idx + 1}`}
+          className="w-full h-64 object-cover"
+        />
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
     <Footer />
     </>
   );
