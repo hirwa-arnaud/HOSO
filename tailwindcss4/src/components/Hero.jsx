@@ -20,7 +20,7 @@ function Hero () {
         </div>
 
         <div className="flex-1 flex justify-center md:justify-end mb-8 md:mb-0">
-          <img src="chancen.jpg" alt="Students"  className="h-80 rounded-2xl"
+          <img src="chancen.jpg" alt="Students"  className="h-80 rounded-2xl p-6"
           />
         </div>
       </section>

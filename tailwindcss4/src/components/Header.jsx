@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Instagram, Facebook, Twitter,} from "lucide-react"; 
+import { Link } from "react-router";
 import Hero from "./Hero"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +12,11 @@ export default function Header() {
 <img src="logo.png" className="h-30" />
 
         <ul className="hidden md:flex space-x-8 text-white font-medium">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About Us</a></li>
+         <Link to="/">Home</Link>
+         <Link to="/news">News</Link>
+         <Link to="/contact">Contact</Link>
+         <Link to="/blog">Blog</Link>
+         <Link to="/about">About Us</Link>
         </ul>
 
         <div className="hidden md:flex space-x-4">

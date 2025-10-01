@@ -21,7 +21,7 @@ export default function Landin() {
     {
       title: "Mission",
       text: "To improve the quality and standards of education through competitive school leadership and management",
-      icon: <FileText size={28} />,
+      icon: <FileText className="" size={28} />,
       color: "bg-blue-500",
     },
     {
@@ -233,13 +233,19 @@ export default function Landin() {
         {images.map((src, idx) => (
           <div
             key={idx}
-            className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition group"
+            className="bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-xl transition relative"
           >
-            <img
-              src={src}
-              alt={`Gallery ${idx + 1}`}
-              className="w-full h-56 object-cover transform group-hover:scale-105 transition duration-500"
-            />
+            <div
+              className={`w-14 h-14 mx-auto flex items-center justify-center rounded-full text-white ${item.color} absolute  top-[-13px]`}
+            >
+              {item.icon}
+            </div>
+
+            <h3 className="mt-6 text-xl font-semibold text-gray-900">
+              {item.title}
+            </h3>
+
+            <p className="mt-4 text-gray-600">{item.text}</p>
           </div>
         ))}
       </div>
