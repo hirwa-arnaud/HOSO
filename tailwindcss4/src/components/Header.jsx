@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Instagram, Facebook, Twitter,} from "lucide-react"; 
+import { Link } from "react-router";
 import Hero from "./Hero"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
