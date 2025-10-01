@@ -1,6 +1,10 @@
 import { FileText, Calendar, Users, PlayCircle } from "lucide-react";
 import ghImg from '../assets/gh.jpg';
+import UCI from '../assets/uci.jpg';
 import Jo from '../assets/jo.jpg';
+import Start from '../assets/rtb.jpg';
+import Rca from '../assets/rca.jpg';
+import School from '../assets/start.jpg';
 import Ho from '../assets/hos.jpg';
 import Nvs from '../assets/nvs.webp'
 import Header from '../components/Header'
@@ -191,6 +195,86 @@ return(
                 ))}
               </div>
               <p className="text-sm text-gray-500">12 reviews at Yelp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <section className=" text-white py-12 px-4 md:px-20">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-indigo-300 mb-2">
+        Lastest News and Resources
+      </h2>
+      <p className="text-center text-gray-400 mb-12">
+        See the developments that have occurred to TOTC in the world
+      </p>
+
+      <div className="grid md:grid-cols-2 gap-12">
+        <div className="space-y-6">
+          <div className="relative rounded-xl overflow-hidden">
+            <img
+              src={UCI}
+              alt="UCI Championship"
+              className="w-full object-cover h-[300px] md:h-[360px]"
+            />
+            <span className="absolute top-4 left-4 bg-teal-500  px-3 py-1 text-sm rounded-full">
+              NEWS
+            </span>
+          </div>
+          <h3 className="text-2xl font-semibold text-black">
+            Schools closed across the Kigali city while the UCI championship take place in Rwanda
+          </h3>
+          <p className="text-gray-400 ">
+            Rwanda made history by hosting the 2025 UCI Road World Championships in Kigali from September 21 to 28.
+          </p>
+          <a href="#" className="text-indigo-400 underline">Read more</a>
+        </div>
+
+        <div className="space-y-8">
+          <div className="flex gap-4">
+            <img
+              src={Rca}
+              alt="Rwanda Coding Academy"
+              className="w-28 h-28 object-cover rounded-lg"
+            />
+            <div>
+              <h4 className="text-indigo-500 font-semibold">
+                Rwanda’s Investment in Education Technology
+              </h4>
+              <p className="text-gray-400  text-sm">
+                The Rwanda Coding Academy (RCA) celebrated a significant milestone with the groundbreaking ceremony for its new campus in Nyabihu District.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <img
+              src={School}
+              alt="Students"
+              className="w-28 h-28 object-cover rounded-lg"
+            />
+            <div>
+              <h4 className="text-indigo-500 font-semibold">
+                Launch of the 2025/2026 Academic Year
+              </h4>
+              <p className="text-gray-400  text-sm">
+                The Ministry of Education officially opened the 2025/2026 academic year across Rwanda, with national and district-level...
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <img
+              src={Start}
+              alt="TVET Lab"
+              className="w-28 h-28 object-cover rounded-lg"
+            />
+            <div>
+              <h4 className="text-indigo-500 font-semibold">
+                Expansion of TVET Centres of Excellence
+              </h4>
+              <p className="text-gray-400 text-sm">
+                The Rwanda Technical and Vocational Education and Training Board (RTB) has announced plans to establish modern model schools in every district.
+              </p>
             </div>
           </div>
         </div>
